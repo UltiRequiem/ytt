@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "ytt"
+version = "0.1.0"
+description = ""
+authors = ["Eliaz Bobadilla <eliaz.bobadilladev@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pendulum = "^2.1"
+pytube = "^12.1.0"
+whisper = {git = "https://github.com/openai/whisper.git"}
+torch = "^1.13.0"
+tqdm = "^4.64.1"
+numpy = "^1.23.4"
+transformers = "^4.24.0"
+ffmpeg-python = "^0.2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.10.0"
